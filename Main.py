@@ -11,17 +11,17 @@ class Queue:
 
   def enqueue(self, data) -> None:
     new_node=Node(data)
-    if  self.last!= "None":
+    if  self.last!= None:
       self.last.next = new_node
-    if self.head == "None":
+    if self.head == None:
       self.head = new_node
       self.last = new_node
 
   def dequeue(self) -> None:
-    if self.head!="None":
+    if self.head!=None:
       self.head=self.head.next
-    if self.head=="None":
-      self.last="None"
+    if self.head==None:
+      self.last=None
 
   def status(self) -> None:
     elements=''
