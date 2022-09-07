@@ -15,7 +15,7 @@ class Queue:
       self.last.next = new_node
     if self.head == None:
       self.head = new_node
-      self.last = new_node
+    self.last = new_node
 
   def dequeue(self) -> None:
     if self.head!=None:
